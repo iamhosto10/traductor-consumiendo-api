@@ -81,25 +81,35 @@ function App() {
             : null}
         </select>
       </div>
+      <div className="traductores">
+        {/* <div className="container "> */}
 
-      <div className="container">
         <form action="" id="formTraduce">
-          <div>
-            <label htmlFor="text">Ingresa el texto a traducir</label>
+          <div className="traductor1">
+            <label className="label1" htmlFor="text">
+              Ingresa el texto a traducir:{" "}
+            </label>
             <textarea
+              className="textarea1"
               name="text"
               id="text"
               cols="30"
               rows="10"
               onChange={(event) => setInputValue(event.target.value)}
             ></textarea>
+            <button className="boton" onClick={(e) => traducir(e)}>
+              {" "}
+              traducir
+            </button>
           </div>
-          <button onClick={(e) => traducir(e)}> traducir</button>
         </form>
 
-        <div className="result">
-          <label htmlFor="Result">Resultado:</label>
+        <div className="traductor2">
+          <label className="label2" htmlFor="Result">
+            Resultado:
+          </label>
           <textarea
+            className="textarea2"
             name="result"
             id="result"
             cols="30"
