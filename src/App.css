@@ -1,7 +1,20 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
+
+
+
+.languages-container{
+    width:40%;
+    height:auto;
+    background-color: red;
+    align-content: center;
+    margin: 0 auto;
+
+}
+
 .traductores{
     position: absolute;
     margin: auto;
@@ -119,5 +132,11 @@
                   user-select: none; /* Non-prefixed version, currently
                                         supported by Chrome, Edge, Opera and Firefox */
     
+}
+
+
+
+#selectLanguagesTo, #selectLanguagesFrom {
+    text-align: center;
 }
 
